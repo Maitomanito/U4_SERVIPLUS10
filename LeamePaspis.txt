@@ -1,0 +1,49 @@
+# configurar el workspace
+1. file->save workspace as-> enter
+2.piñonsito->settings->workspace->wordbench->apperance->colors
+
+#Comando para desinstalar 
+npm uninstall (nombre del programa) 
+
+#creación del package.json
+1.npm init 
+
+"Instalación de librerias para backend
+npm i cors 
+npm i morgan
+npm i express 
+npm i mongoose 
+npm i bcryptjs (pa encriptar)
+npm i jsonwebtoken (pa verificar token)
+
+npm i dotenv --save-dev {(para manejar archivos de configuración) ejecutar en modo desarrollo} 
+npm i nodemon --save-dev (permite compilar el codigo )
+
+#librerias para progrmar más rápido y en menos lineas 
+npm i @types/cors --save-dev 
+npm i @types/morgan --save-dev
+npm i @types/express --save-dev
+npm i @types/jsonwebtoken --save-dev
+
+#vamos a agregar typescript 
+tsc --init (configurar el documento tsconfig.json que crea el comando 
+crtl+f para buscar el outDir y lo remplazamos por  "outDir": "./build",)
+
+#Scripts de ejecución(para compilar y ejecutar)
+#Esto va en el package json 
+"dev": "nodemon build/index.js",
+"build": "tsc -w"
+
+
+
+
+#Crear cascarón 
+1.se crea la carpeta src en tu proyekto
+2.se crea dentro de src una carpeta: configuración, entidad, dao(data acces object ), controlador, esquema, middleware, ruta
+
+
+#transpilar código 
+npm run build 
+
+#subir el servidor
+npm run dev
